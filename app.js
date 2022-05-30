@@ -11,6 +11,7 @@ app.use((req, res, next) => {
     next(); });
     var recipmodel=Mongoose.model("recips",
     new Mongoose.Schema({
+        image:String,
         recipetitle:String,
         category:String,
         description:String,
